@@ -1,0 +1,142 @@
+@font-face {
+  font-family: cursive;
+  src: url(./fonts/cursive.ttf);
+}
+
+@font-face {
+  font-family: oswald;
+  src: url(./fonts/oswald.ttf);
+}
+
+@font-face {
+  font-family: yellowtail;
+  src: url(./fonts/yellowtail.ttf);
+}
+
+body {
+  margin: 0;
+  background-color: var(--homeBackgroundColor);
+}
+
+:root {
+  --greetingSize: calc(var(--borderLength) * 3);
+  --mainSize: 40vh;
+  --screenHeight: 90vh;
+  --screenWidth: 100vh;
+  --buttonOpacity: 75%;
+  --borderLength: 2vw;
+  --letterSpacing: calc(var(--greetingSize) / 10);
+  --buttonFontSize: calc(var(--greetingSize) / 2.5);
+  --headerFontSize: calc(var(--greetingSize) / 3);
+  --skewness: -8deg;
+  --color: #fefaef;
+  --homeBackgroundColor: #e6e6fa;
+}
+
+.headerContainer {
+  display: flex;
+  background-color: var(--homeBackgroundColor);
+  justify-content: left;
+  align-items: center;
+}
+
+.nameSignature {
+  font-family: oswald;
+  margin-left: 30px;
+}
+
+.nameDescription {
+  font-family: yellowtail;
+  flex: 1;
+  margin-left: 60px;
+}
+
+.nameDescription,
+.nameSignature,
+.resumeButton,
+.projectButton,
+.contactButton,
+.homeButton {
+  color: black;
+  font-size: var(--headerFontSize);
+  text-decoration: none;
+}
+
+.homeButton,
+.projectButton,
+.contactButton {
+  background-color: transparent;
+  height: fit-content;
+  opacity: 100%;
+  border: transparent 4px solid;
+  margin: 10px;
+  font-family: oswald;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-width: 80vw;
+  min-height: 80vh;
+  border: var(--borderLength) solid #fefaef;
+}
+
+.postcard {
+  overflow: hidden;
+  width: 100vw;
+  height: 95vh;
+  background: linear-gradient(160deg, #ffe3ef 50%, #6dd5ed 100%);
+}
+
+.greetingsButtonRow {
+  display: flex;
+  align-items: end;
+}
+
+.greetingsText {
+  font-size: var(--greetingSize);
+  font-family: yellowtail;
+  letter-spacing: calc(var(--greetingSize) / 10);
+  color: black;
+  margin: 10px 0 0 30px;
+}
+
+.emptySpace {
+  margin: 10px 0 0 30px;
+  flex: 0.95;
+}
+
+.homeDisplay {
+  position: relative;
+}
+
+.resumeText {
+  position: relative;
+  font-family: oswald;
+  font-size: var(--mainSize);
+  transform: skewY(var(--skewness));
+  letter-spacing: -22px;
+  text-align: center;
+  z-index: 1;
+  background-image: url(./pictures/seattle.jpg);
+  background-repeat: no-repeat;
+  -webkit-text-stroke: 4px black;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 100vw;
+  background-position-y: 30%;
+  background-position-x: -25%;
+  color: transparent;
+  -webkit-filter: drop-shadow(20px 00px white);
+  filter: drop-shadow(25px 0px white);
+  margin-left: -20px;
+}
+
+.location {
+  font-family: yellowtail;
+  font-size: var(--greetingSize);
+  position: absolute;
+  bottom: -30px;
+  right: 8vh;
+  letter-spacing: var(--letterSpacing);
+}
