@@ -140,3 +140,17 @@ body {
   right: 8vh;
   letter-spacing: var(--letterSpacing);
 }
+
+.resumeContainer {
+  display: flex;
+  margin: 0px 30px;
+  background-color: var(--homeBackgroundColor);
+  flex-direction: row;
+  min-width: var(--screenWidth);
+  min-height: 100%;
+}
+
+.resume {
+  width: calc(var(--screenWidth) * 2);
+  height: calc(var(--screenHeight) * 2);
+}

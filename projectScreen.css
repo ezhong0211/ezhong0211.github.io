@@ -140,3 +140,13 @@ body {
   right: 8vh;
   letter-spacing: var(--letterSpacing);
 }
+
+.timeLine {
+  display: flex;
+  min-height: 100vh;
+}
+
+.amazon1 {
+  font-size: 100;
+  border: 2px red solid;
+}
