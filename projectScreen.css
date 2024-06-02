@@ -141,12 +141,45 @@ body {
   letter-spacing: var(--letterSpacing);
 }
 
-.timeLine {
+.timelineContainer {
+  min-width: 100vw;
   display: flex;
+  border: solid red 2px;
+}
+.timeline {
+  position: relative;
+  max-width: 1px;
+  justify-content: center;
+  content: "";
   min-height: 100vh;
+  border: 2px solid black;
 }
 
-.amazon1 {
-  font-size: 100;
+.leftContainer,
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+.amazon1Front,
+.amazon1Back {
+  display: flex;
+  flex-direction: column;
+  font-size: calc(var(--headerFontSize) / 1.5);
   border: 2px red solid;
+  width: 46vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+}
+
+.amazon1Name {
+  flex: 1;
+  font-weight: bold;
+}
+
+.amazon1Back {
+  display: none;
+  border: 2px blue solid;
 }
