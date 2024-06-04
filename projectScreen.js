@@ -9,9 +9,9 @@ function showOther(className) {
     frontContName.style.display = "none";
     backContName.style.display = "block";
   }
-  console.log("hey");
 }
 
 function openResume() {
   open("./Eric_Zhong_Resume.pdf");
+  console.log("work")
 }
