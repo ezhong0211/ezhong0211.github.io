@@ -31,6 +31,7 @@ body {
   --skewness: -8deg;
   --color: #fefaef;
   --homeBackgroundColor: #e6e6fa;
+  --highlightColor: #bd53db;
 }
 
 .headerContainer {
@@ -144,7 +145,7 @@ body {
 .timelineContainer {
   min-width: 100vw;
   display: flex;
-  border: solid red 2px;
+  justify-content: center;
 }
 .timeline {
   position: relative;
@@ -152,7 +153,8 @@ body {
   justify-content: center;
   content: "";
   min-height: 100vh;
-  border: 2px solid black;
+  border: 4px solid black;
+  margin-top: 2vh;
 }
 
 .leftContainer,
@@ -163,23 +165,191 @@ body {
 }
 
 .amazon1Front,
-.amazon1Back {
+.amazon1Back,
+.LJLFront,
+.edgiFront,
+.embodyFront,
+.busFront,
+.whartonFront,
+.XMPFront,
+.amazon2Front,
+.painFront,
+.amazon3Front,
+.emptyBox,
+.leftemptyBox {
   display: flex;
   flex-direction: column;
-  font-size: calc(var(--headerFontSize) / 1.5);
-  border: 2px red solid;
-  width: 46vw;
+  font-size: calc(var(--headerFontSize));
+  width: 35vw;
   margin-left: 2vw;
   margin-right: 2vw;
   margin-top: 2vh;
+  height: 40vw;
+  background-color: white;
+  border-radius: 20px;
+  border: solid black 3px;
 }
 
-.amazon1Name {
+.emptyBox,
+.instructionsBox,
+.leftemptyBox {
+  border: transparent;
+  background-color: transparent;
+}
+
+.emptyBox,
+.leftemptyBox {
+  height: 20vw;
+  font-family: oswald;
+  text-align: right;
+  padding-top: 30%;
+}
+
+.leftemptyBox {
+  text-align: left;
+}
+
+.topBox {
+  height: 26vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
+  margin-top: 2vh;
+  color: black;
+  font-family: oswald;
+  font-size: calc(var(--headerFontSize) / 1.2);
+  padding-top: 300px;
+  height: 15vw;
+}
+
+.instructionsBox {
+  font-family: oswald;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.instructionsBox {
+  color: black;
+}
+
+.amazon3 {
+  margin-bottom: 80px;
+}
+
+.amazon1Name,
+.LJLName,
+.edgiName,
+.embodyName,
+.busName,
+.whartonName,
+.XMPName,
+.amazon2Name,
+.painName,
+.amazon3Name,
+.amazon1LocDate,
+.LJLLocDate,
+.edgiLocDate,
+.embodyLocDate,
+.busLocDate,
+.whartonLocDate,
+.XMPLocDate,
+.amazon2LocDate,
+.painLocDate,
+.amazon3LocDate {
   flex: 1;
   font-weight: bold;
+  padding: 20px;
 }
 
-.amazon1Back {
+.amazon1LocDate,
+.LJLLocDate,
+.edgiLocDate,
+.embodyLocDate,
+.busLocDate,
+.whartonLocDate,
+.XMPLocDate,
+.amazon2LocDate,
+.painLocDate,
+.amazon3LocDate {
+  align-content: end;
+}
+
+.amazon1pic,
+.LJLpic,
+.edgipic,
+.buspic,
+.embodypic,
+.whartonpic,
+.XMPpic,
+.amazon2pic,
+.painpic,
+.amazon3pic {
+  height: 600px;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.amazon1Desc,
+.LJLDesc,
+.edgiDesc,
+.busDesc,
+.embodyDesc,
+.whartonDesc,
+.XMPDesc,
+.amazon2Desc,
+.painDesc,
+.amazon3Desc {
   display: none;
-  border: 2px blue solid;
+  color: red;
+  height: 600px;
+  overflow-wrap: break-word;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  background-color: var(--color);
+}
+
+.amazon1pic {
+  opacity: 100;
+  background: url(./pictures/AFE.jpg) center;
+}
+
+.whartonpic {
+  background: url(./pictures/penn.jpg) center;
+  background-size: contain;
+}
+.LJLpic {
+  background: url(./pictures/ljl.jpg) center;
+  background-size: cover;
+}
+.XMPpic {
+  background: url(./pictures/xmp.jpg) center;
+  background-size: 101%;
+}
+.edgipic {
+  background: url(./pictures/edgi.jpg) center;
+  background-size: cover;
+}
+.amazon2pic {
+  background: url(./pictures/aws2.jpg) center;
+  background-size: cover;
+}
+.buspic {
+  background: url(./pictures/h4i.jpg) center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: black;
+}
+.painpic {
+  background: url(./pictures/cornell.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.embodypic {
+  background: url(./pictures/humec.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.amazon3pic {
+  background: url(./pictures/aws.jpg) center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }

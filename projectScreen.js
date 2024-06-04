@@ -1,17 +1,15 @@
 function showOther(className) {
-  var frontContName = document.querySelector(
-    ".".concat(className.concat("Front"))
-  );
+  var frontContName = document.querySelector(`.${className}pic`);
   console.log(frontContName);
-  var backContName = document.querySelector(
-    ".".concat(className.concat("Back"))
-  );
+  var backContName = document.querySelector(`.${className}Desc`);
   if (frontContName.style.display == "none") {
-    frontContName.style.display = "flex";
+    frontContName.style.display = "block";
     backContName.style.display = "none";
   } else {
     frontContName.style.display = "none";
-    backContName.style.display = "flex";
+    backContName.style.display = "block";
   }
   console.log("hey");
 }
+
+function show(className) {}

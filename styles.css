@@ -31,6 +31,7 @@ body {
   --skewness: -8deg;
   --color: #fefaef;
   --homeBackgroundColor: #e6e6fa;
+  --highlightColor: #bd53db;
 }
 
 .headerContainer {
@@ -178,7 +179,7 @@ body {
 .trying {
   text-decoration: underline;
   font-weight: bold;
-  color: #bd53db;
+  color: var(--highlightColor);
 }
 
 .profilePic {
