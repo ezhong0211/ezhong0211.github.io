@@ -149,7 +149,6 @@ body {
   padding-bottom: 50px;
   border: solid 2px red;
   display: flex;
-  flex-direction: column;
   gap: 50px;
   align-items: center;
   width: 35%;

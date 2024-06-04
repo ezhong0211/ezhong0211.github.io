@@ -37,41 +37,8 @@
       <a href="https://www.linkedin.com/in/ericzhong1/" target="_blank">
         <img class="linkedin" src="./pictures/linkedin.png" alt="LinkedIn">
       </a>
-      <a href="https://github.com/ezhong0211" target="_blank">
-        <img class="github" src="./pictures/github.png" alt="Github">
-      </a>
-    </div>
-    <div class="emailContainer">
-      <div class="emailInst">Email Me!</div>
-      <form method="post" id="emailForm">
-        <input id="formEmail" type="text" placeholder="Email" autocomplete="off">
-        <input id="formName" type="text" placeholder="Name" autocomplete="off">
-        <input id="formSubject" type="text" placeholder="Subject" autocomplete="off">
-        <textarea id="formMessage" cols=30 rows=10 placeholder="Message"></textarea>
-        <button id="send">Send</button>
-      </form>
     </div>
   </div>
-  <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <script>
-    var btn = document.getElementById('send');
-    var email = document.getElementById("formEmail").value;
-    var name = document.getElementById("formName").value;
-    var subject = document.getElementById("formElement").value;
-    var msg = document.getElementById('formMessage').value;
-    btn.addEventListener('click', function (e) {
-      Email.send({
-        SecureToken: "2a7e2916-45bd-4759-b509-ff94cf89f03b",
-        To: 'ejz25@cornell.edu',
-        From: email,
-        Subject: subject,
-        Body: msg
-      }).then(
-        message => alert(msg)
-      );
-    })
-  </script>
 </body>
 
 </html>
