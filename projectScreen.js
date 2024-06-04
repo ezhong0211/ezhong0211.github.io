@@ -12,4 +12,6 @@ function showOther(className) {
   console.log("hey");
 }
 
-function show(className) {}
+function openResume() {
+  open("./Eric_Zhong_Resume.pdf");
+}
