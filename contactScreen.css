@@ -131,3 +131,36 @@ body {
   right: 8vh;
   letter-spacing: var(--letterSpacing);
 }
+
+.contactContainer {
+  border: solid 2px red;
+  display: flex;
+}
+
+.emailContainer {
+  border: solid 2px green;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+.iconsContainer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border: solid 2px red;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+  width: 35%;
+}
+
+.github,
+.gmail,
+.linkedin {
+  height: 200px;
+}
+
+.send {
+  cursor: pointer;
+}
