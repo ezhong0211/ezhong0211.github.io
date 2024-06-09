@@ -55,7 +55,7 @@ body {
 .nameDescription,
 .nameSignature,
 .resumeButton,
-.projectButton,
+.experienceButton,
 .contactButton {
   color: black;
   font-size: var(--headerFontSize);
@@ -63,7 +63,7 @@ body {
 }
 
 .resumeButton,
-.projectButton,
+.experienceButton,
 .contactButton {
   background-color: transparent;
   height: fit-content;

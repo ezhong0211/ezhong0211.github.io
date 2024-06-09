@@ -54,7 +54,7 @@ body {
 .nameDescription,
 .nameSignature,
 .resumeButton,
-.projectButton,
+.experienceButton,
 .contactButton,
 .homeButton {
   color: black;
@@ -64,7 +64,7 @@ body {
 
 .homeButton,
 .resumeButton,
-.projectButton {
+.experienceButton {
   background-color: transparent;
   height: fit-content;
   opacity: 100%;

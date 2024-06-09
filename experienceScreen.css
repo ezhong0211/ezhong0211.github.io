@@ -55,7 +55,7 @@ body {
 .nameDescription,
 .nameSignature,
 .resumeButton,
-.projectButton,
+.experienceButton,
 .contactButton,
 .homeButton {
   color: black;
@@ -111,7 +111,7 @@ body {
   position: relative;
 }
 
-.projectsText {
+.experiencesText {
   position: relative;
   font-family: oswald;
   font-size: var(--mainSize);
